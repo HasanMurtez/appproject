@@ -1,0 +1,38 @@
+.header-title {
+    font-size: 24px;
+  }
+  
+  .content-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .status-list {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .radio-group {
+    padding: 10px;
+  }
+  
+  .radio-item {
+    --padding-start: 0;
+  }
+  
+  .radio-label {
+    font-size: 18px;
+  }
+  
+  .radio {
+    --inner-checked-background: #4caf50;
+  }
+  
+  .save-button {
+    margin-top: 20px;
+    --background: #1976d2;
+    --border-radius: 10px;
+    font-weight: bold;
+  }
+  

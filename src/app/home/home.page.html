@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Weather-App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-searchbar [(ngModel)]="searchQuery" (keyup.enter)="searchLocation()" placeholder="Enter location"></ion-searchbar>
+  <ion-button expand="block" (click)="searchLocation()">Enter</ion-button>
+  <div *ngIf="weather">
+    <p>Description: {{ weather.description }}</p>
+    <p>Temperature: {{ weather.temperature }} °C</p>
+    <p>Wind Speed: {{ weather.windSpeed }} m/s</p>
+    <p>Humidity: {{ weather.humidity }}%</p>
+    <!-- Add more weather details here as needed -->
+  </div>
+
+  <div *ngIf="errorMessage">{{ errorMessage }}</div>
+  <ion-button [routerLink]="['/weather']">How do you feel about the weather</ion-button>
+
+</ion-content>
+
